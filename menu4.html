@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <title>Menu</title>
+    <style>
+        body{
+            margin:0px
+        }
+        .menu-line {
+            display: block;
+            position: absolute;
+            height: 100%;
+            width: 50px;
+            background-color: brown;
+        }
+        .menu {
+            display: none;
+            position: absolute;
+            height: 100%;
+            background-color: brown;
+        }
+        .menu-item {
+            display:block;
+            padding:10px 30px 10px 30px;
+            text-align: center;
+            position:relative;
+            cursor:pointer;
+            display:block;
+
+        }
+        .menu-item:hover {
+            background-color: pink;
+        }
+
+        .dropdown {
+            width: 150px;
+            display: block;
+            background-color: brown;
+            position: absolute;
+            top: 0px;
+            left: 100%;
+            display: none;
+        }
+        .menu-line:hover .menu {
+            display: block;
+        }
+
+        .menu-item:hover .dropdown {
+            background-color: pink;
+            display: block;
+        }
+        .dropdown-item{
+            padding:10px 30px 10px 30px;
+            white-space: nowrap;
+        }
+        .dropdown-item:hover{
+            background-color: brown;
+        }
+        .dropdown-item a{
+            color: black;
+            text-decoration:none;
+        }
+    </style>
+</head>
+<body>
+    <div class='menu-line'>
+        <div class='menu'>
+            <div class='menu-item'>
+                About us
+                <div class='dropdown'>
+                    <div class='dropdown-item'>Dropdown item</div>
+                    <div class='dropdown-item'>Dropdown item</div>
+                    <div class='dropdown-item'><a href='https://google.com'>Google</a></div>
+                </div>
+            </div>
+            <div class='menu-item'>
+                Activities
+                <div class='dropdown'>
+                    <div class='dropdown-item'>Dropdown item</div>
+                    <div class='dropdown-item'>Dropdown item</div>
+                    <div class='dropdown-item'>Dropdown item</div>
+                </div>
+            </div>
+            <div class='menu-item'>
+                Stock
+                <div class='dropdown'>
+                    <div class='dropdown-item'>Dropdown item</div>
+                    <div class='dropdown-item'>Dropdown item</div>
+                    <div class='dropdown-item'>Dropdown item</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
